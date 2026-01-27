@@ -4,7 +4,7 @@ kind: ArtifactGenerator
 metadata:
   name: flux-system
   namespace: flux-system
-specc:
+spec:
   sources:
     - alias: monorepo
       kind: GitRepository
