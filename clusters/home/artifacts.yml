@@ -13,7 +13,5 @@ spec:
     - name: apps
       originRevision: "@monorepo"
       copy:
-        - from: "@monorepo/apps/base/**"
-          to: "@artifact/base/"
-        - from: "@monorepo/apps/home/**"
-          to: "@artifact/home/"
+        - from: "@monorepo/apps/**"
+          to: "@artifact/"
