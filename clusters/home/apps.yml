@@ -8,9 +8,8 @@ spec:
   interval: 1h
   retryInterval: 2m
   timeout: 5m
-  sourceRef:
-    kind: ExternalArtifact
-    name: apps
-  path: ./home
   prune: true
-  wait: true
+  path: ./apps/home
+  sourceRef:
+    kind: GitRepository
+    name: flux-system
