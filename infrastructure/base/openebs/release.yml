@@ -23,6 +23,7 @@ spec:
           enabled: false
     loki:
       enabled: false
-    
+      localpvScConfig:
+        enabled: false
     minio:
       enabled: false
