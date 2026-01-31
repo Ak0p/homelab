@@ -17,8 +17,7 @@ spec:
     remediation:
       retries: 3
   values:
-    openebs:
-      engines:
-        replicated:
-          mayastor:
-            enabled: false
+    engines:
+      replicated:
+        mayastor:
+          enabled: false
