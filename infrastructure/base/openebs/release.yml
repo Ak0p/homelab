@@ -30,7 +30,7 @@ spec:
 
       localpvScConfig:
         loki:
-          basePath: "/var/openebs/{{ .Release.Name }}/localpv-hostpath/loki"
+          basePath: "/var/openebs/local/{{ .Release.Name }}/localpv-hostpath/loki"
 
       loki:
         schemaConfig:
