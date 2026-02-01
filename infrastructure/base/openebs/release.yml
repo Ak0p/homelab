@@ -30,7 +30,7 @@ spec:
 
       localpvScConfig:
         loki:
-          basePath: "/var/openebs/local/{{ .Release.Name }}/localpv-hostpath/loki"
+          basePath: "/var/openebs/local/localpv-hostpath/loki"
 
       loki:
         schemaConfig:
@@ -56,4 +56,6 @@ spec:
       minio:
         enabled: false
 
-        #FIXME: Loki are mountpath-ul la PVC in /var/local/.... , path care nu merge pe talos. Ori schimbi la /var/openebs/.... ori nu mai folosesti
+    localpv-provisioner:
+      localpv: 
+        basePath: "/var/local/openebs"
